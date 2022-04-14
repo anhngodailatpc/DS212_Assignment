@@ -1,0 +1,1 @@
+    Avg=format(round(mean(Brazil_data$new_deaths),2),2) 
