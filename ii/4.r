@@ -1,1 +1,0 @@
-    Std=format(round(sd(Brazil_data$new_cases),2),2)
