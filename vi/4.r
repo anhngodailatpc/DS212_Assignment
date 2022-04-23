@@ -14,7 +14,7 @@ m<-function(x){
 }
 
 BRA_DATA <- BRA
-BRA_DATA<-subset(owid_covid_data,location=="Brazil")
+BRA_DATA<-subset(FILE,location=="Brazil")
 BRA_DATA$new_cases<-abs(BRA_DATA$new_cases)
 BRA_DATA$new_deaths<-abs(BRA_DATA$new_deaths)
 BRA_DATA$date<-format(as.Date(BRA_DATA$date, format = "%m/%d/%Y"), "%Y-%m-%d")
@@ -34,7 +34,7 @@ ggplot()+geom_line(data=BRA_DATA_2tc_2021, aes(x=date, y=new_cases_tb,group=1,co
 
 
 CHL_DATA <- CHL
-CHL_DATA<-subset(owid_covid_data,location=="Brazil")
+CHL_DATA<-subset(FILE,location=="Brazil")
 CHL_DATA$new_cases<-abs(CHL_DATA$new_cases)
 CHL_DATA$new_deaths<-abs(CHL_DATA$new_deaths)
 CHL_DATA$date<-format(as.Date(CHL_DATA$date, format = "%m/%d/%Y"), "%Y-%m-%d")
@@ -49,12 +49,12 @@ CHL_DATA_2tc<-subset(CHL_DATA,(month=="11")|(month=="12"))
 CHL_DATA_2tc_2020<-subset(CHL_DATA_2tc,(year=="2020"))
 CHL_DATA_2tc_2021<-subset(CHL_DATA_2tc,(year=="2021"))
 
-ggplot()+geom_line(data=CHL_DATA_2tc_2020, aes(x=date, y=new_cases_tb,group=1,col="red"))+scale_x_discrete(breaks=c("2020-11-01","2020-12-01","2020-12-31"))+labs(title = "Bieu do the hien thu thap ca nhiem o Brazil thang 11,12/2020",x="Thoi gian", y="So ca nhiem moi")
-ggplot()+geom_line(data=CHL_DATA_2tc_2021, aes(x=date, y=new_cases_tb,group=1,col="red"))+scale_x_discrete(breaks=c("2021-11-01","2021-12-01","2021-12-31"))+labs(title = "Bieu do the hien thu thap ca nhiem o Brazil thang 11,12/2021",x="Thoi gian", y="So ca nhiem moi")
+ggplot()+geom_line(data=CHL_DATA_2tc_2020, aes(x=date, y=new_cases_tb,group=1,col="red"))+scale_x_discrete(breaks=c("2020-11-01","2020-12-01","2020-12-31"))+labs(title = "Bieu do the hien thu thap ca nhiem o Chile thang 11,12/2020",x="Thoi gian", y="So ca nhiem moi")
+ggplot()+geom_line(data=CHL_DATA_2tc_2021, aes(x=date, y=new_cases_tb,group=1,col="red"))+scale_x_discrete(breaks=c("2021-11-01","2021-12-01","2021-12-31"))+labs(title = "Bieu do the hien thu thap ca nhiem o Chile thang 11,12/2021",x="Thoi gian", y="So ca nhiem moi")
 
 
 VEN_DATA <- VEN
-VEN_DATA<-subset(owid_covid_data,location=="Brazil")
+VEN_DATA<-subset(FILE,location=="Brazil")
 VEN_DATA$new_cases<-abs(VEN_DATA$new_cases)
 VEN_DATA$new_deaths<-abs(VEN_DATA$new_deaths)
 VEN_DATA$date<-format(as.Date(VEN_DATA$date, format = "%m/%d/%Y"), "%Y-%m-%d")
@@ -69,7 +69,7 @@ VEN_DATA_2tc<-subset(VEN_DATA,(month=="11")|(month=="12"))
 VEN_DATA_2tc_2020<-subset(VEN_DATA_2tc,(year=="2020"))
 VEN_DATA_2tc_2021<-subset(VEN_DATA_2tc,(year=="2021"))
 
-ggplot()+geom_line(data=VEN_DATA_2tc_2020, aes(x=date, y=new_cases_tb,group=1,col="red"))+scale_x_discrete(breaks=c("2020-11-01","2020-12-01","2020-12-31"))+labs(title = "Bieu do the hien thu thap ca nhiem o Brazil thang 11,12/2020",x="Thoi gian", y="So ca nhiem moi")
-ggplot()+geom_line(data=VEN_DATA_2tc_2021, aes(x=date, y=new_cases_tb,group=1,col="red"))+scale_x_discrete(breaks=c("2021-11-01","2021-12-01","2021-12-31"))+labs(title = "Bieu do the hien thu thap ca nhiem o Brazil thang 11,12/2021",x="Thoi gian", y="So ca nhiem moi")
+ggplot()+geom_line(data=VEN_DATA_2tc_2020, aes(x=date, y=new_cases_tb,group=1,col="red"))+scale_x_discrete(breaks=c("2020-11-01","2020-12-01","2020-12-31"))+labs(title = "Bieu do the hien thu thap ca nhiem o Venezuela thang 11,12/2020",x="Thoi gian", y="So ca nhiem moi")
+ggplot()+geom_line(data=VEN_DATA_2tc_2021, aes(x=date, y=new_cases_tb,group=1,col="red"))+scale_x_discrete(breaks=c("2021-11-01","2021-12-01","2021-12-31"))+labs(title = "Bieu do the hien thu thap ca nhiem o Venezuela thang 11,12/2021",x="Thoi gian", y="So ca nhiem moi")
 
 

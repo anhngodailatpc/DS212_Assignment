@@ -29,8 +29,8 @@ BRA_DATA_Made_2020<-subset(BRA_DATA_Made,(year=="2020"))
 BRA_DATA_Made_2021<-subset(BRA_DATA_Made,(year=="2021"))
 BRA_DATA_Made_2022<-subset(BRA_DATA_Made,(year=="2022"))
 
-ggplot(BRA_DATA_Made_2020,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao cac thang 03,06,07-2020 cua Brazil",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
-ggplot(BRA_DATA_Made_2021,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao cac thang 01,03,06,07-2021 cua Brazil",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
+ggplot(BRA_DATA_Made_2020,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao cac thang 07,09,10-2020 cua Brazil",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
+ggplot(BRA_DATA_Made_2021,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao cac thang 01,07,09,10-2021 cua Brazil",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
 ggplot(BRA_DATA_Made_2022,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao thang 01-2022 cua Brazil",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
 
 
@@ -50,9 +50,9 @@ CHL_DATA_Made_2020<-subset(CHL_DATA_Made,(year=="2020"))
 CHL_DATA_Made_2021<-subset(CHL_DATA_Made,(year=="2021"))
 CHL_DATA_Made_2022<-subset(CHL_DATA_Made,(year=="2022"))
 
-ggplot(CHL_DATA_Made_2020,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao cac thang 03,06,07-2020 cua Brazil",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
-ggplot(CHL_DATA_Made_2021,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao cac thang 01,03,06,07-2021 cua Brazil",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
-ggplot(CHL_DATA_Made_2022,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao thang 01-2022 cua Brazil",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
+ggplot(CHL_DATA_Made_2020,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao cac thang 07,09,10-2020 cua Chile",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
+ggplot(CHL_DATA_Made_2021,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao cac thang 01,07,09,10-2021 cua Chile",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
+ggplot(CHL_DATA_Made_2022,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao thang 01-2022 cua Chile",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
 
 
 VEN_DATA <- VEN
@@ -71,7 +71,7 @@ VEN_DATA_Made_2020<-subset(VEN_DATA_Made,(year=="2020"))
 VEN_DATA_Made_2021<-subset(VEN_DATA_Made,(year=="2021"))
 VEN_DATA_Made_2022<-subset(VEN_DATA_Made,(year=="2022"))
 
-ggplot(VEN_DATA_Made_2020,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao cac thang 03,06,07-2020 cua Brazil",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
-ggplot(VEN_DATA_Made_2021,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao cac thang 01,03,06,07-2021 cua Brazil",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
-ggplot(VEN_DATA_Made_2022,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao thang 01-2022 cua Brazil",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
+ggplot(VEN_DATA_Made_2020,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao cac thang 07,09,10-2020 cua Venezuela",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
+ggplot(VEN_DATA_Made_2021,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao cac thang 01,07,09,10-2021 cua Venezuela",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
+ggplot(VEN_DATA_Made_2022,(aes(x = dates, y = new_cases_tb))) + geom_line(aes(color = month),group=1) +facet_wrap( ~ month)  +labs(title = "Bieu do the hien thu thap nhiem benh vao thang 01-2022 cua Venezuela",subtitle = "Theo trung binh 7 ngay gan nhat",y = "So ca nhiem benh",x = "Ngay",color = "Chu thich")+scale_x_discrete(breaks=c("10","20","31")) 
 
