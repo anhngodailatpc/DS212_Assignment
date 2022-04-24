@@ -1,0 +1,13 @@
+#Seperate data for 4,5,6
+brazil <- subset(owid_covid_data, location == "Brazil")
+brazil <- subset(brazil, month(date) == 11 | month(date) == 12)
+ brazil.2020 <- subset(brazil, year(date) == 2020)
+  brazil.2021 <- subset(brazil, year(date) == 2021)
+  chile <- subset(owid_covid_data, location == "Chile")
+  chile <- subset(chile, month(date) == 11 | month(date) == 12)
+  chile.2020 <- subset(chile, year(date) == 2020)
+  chile.2021 <- subset(chile, year(date) == 2021)
+  venezuela <- subset(owid_covid_data, location == "Venezuela")
+  venezuela <- subset(venezuela, month(date) == 11 | month(date) == 12)
+  venezuela.2020 <- subset(venezuela, year(date) == 2020)
+  venezuela.2021 <- subset(venezuela, year(date) == 2021)

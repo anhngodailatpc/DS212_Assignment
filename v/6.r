@@ -1,0 +1,18 @@
+#2020
+  plot(brazil.2020$new_cases, type = "l",xaxt="n", col = "red", ylim = c(0, max(brazil.2020$new_cases)), xlab = "Month", ylab = "New cases/deaths", main = "New cases/deaths in the last 2 months of 2020")
+  lines(chile.2020$new_cases, col = "yellow", type = "l")
+  lines(venezuela.2020$new_cases, col = "green", type = "l")
+  lines(brazil.2020$new_deaths, col = "blue", type = "l")
+  lines(chile.2020$new_deaths, col = "violet", type = "l")
+  lines(venezuela.2020$new_deaths, col = "orange", type = "l")
+  axis(1, at = c(0,30), labels = c("Nov", "Dec"))
+  legend("topleft", legend = c("Brazil_New cases", "Chile_New cases", "Venezuela_New cases", "Brazil_New deaths", "Chile_New deaths", "Venezuela_New deaths"), col = c("red","yellow", "green", "blue", "violet", "orange"), lty = 1, ncol = 1, bty = "o", text.col = c("red","yellow", "green", "blue", "violet", "orange"), cex = 0.8)
+#2021
+  plot(brazil.2021$new_cases, type = "l",xaxt="n", col = "red", ylim = c(0, max(brazil.2021$new_cases)), xlab = "Month", ylab = "New cases/deaths", main = "New cases/deaths in the last 2 months of 2021")
+  lines(chile.2021$new_cases, col = "yellow", type = "l")
+  lines(venezuela.2021$new_cases, col = "green", type = "l")
+  lines(brazil.2021$new_deaths, col = "blue", type = "l")
+  lines(chile.2021$new_deaths, col = "violet", type = "l")
+  lines(venezuela.2021$new_deaths, col = "orange", type = "l")
+  axis(1, at = c(0,30), labels = c("Nov", "Dec"))
+legend("topleft", legend = c("Brazil_New cases", "Chile_New cases", "Venezuela_New cases", "Brazil_New deaths", "Chile_New deaths", "Venezuela_New deaths"), col = c("red","yellow", "green", "blue", "violet", "orange"), lty = 1, ncol = 1, bty = "o", text.col = c("red","yellow", "green", "blue", "violet", "orange"), cex = 0.8)
